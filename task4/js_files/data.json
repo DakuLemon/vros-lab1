@@ -1,0 +1,11 @@
+{
+"contact":[{
+	"id":1,
+	"name": "Ichigo Kurosaki",
+	"phone":"0192837465"}],
+"message": [
+	{ "id": 1,
+	"subject":"some important information",
+	"description":"some super-duper important info",
+	"contactId": 1}]
+}

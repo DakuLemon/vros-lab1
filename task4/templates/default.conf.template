@@ -1,0 +1,14 @@
+server {
+    listen 80;
+    server_name 0.0.0.0;
+    location /js_server/message {
+        proxy_pass http://js_server:8001/message;
+    }
+    location /js_server/contact {
+        proxy_pass http://js_server:8001/contact;
+    }
+  
+    location / {
+        proxy_pass http://lite_server:3000;
+    }
+}

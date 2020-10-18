@@ -1,0 +1,5 @@
+version: '3'
+
+services:
+  l1_task1:
+    image: hello-world:latest

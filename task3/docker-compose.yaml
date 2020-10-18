@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+    l1_task3:
+        image: node:latest
+        working_dir: /l1_json
+        volumes:
+        - ./:/l1_json
+        ports: 
+        - 8001:3000
+        command: bash npm_run.sh

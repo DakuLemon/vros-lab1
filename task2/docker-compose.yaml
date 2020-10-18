@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+    l1_task2:
+        image: node:latest
+        working_dir: /l1_lite
+        volumes:
+        - ./:/l1_lite
+        ports: 
+        - 8000:3000
+        command: bash npm_run.sh
+    
